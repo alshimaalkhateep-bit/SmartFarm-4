@@ -1,0 +1,687 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>السوق الزراعي | من أرضنا</title>
+
+    <link rel="stylesheet"
+        href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="top-nav">
+
+        <div class="nav-right">
+
+            <button class="menu-btn"
+                id="menuBtn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="logo">
+
+                🌱 من أرضنا
+
+            </div>
+
+        </div>
+
+
+        <div class="nav-links"
+            id="navLinks">
+
+            <a href="home.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                الرئيسية
+
+            </a>
+
+
+            <a href="#"
+                class="active">
+
+                <i class="fa-solid fa-store"></i>
+
+                السوق
+
+            </a>
+
+
+            <a href="#">
+
+                <i class="fa-solid fa-box"></i>
+
+                الطلبات
+
+            </a>
+
+
+            <a href="#">
+
+                <i class="fa-solid fa-user"></i>
+
+                حسابي
+
+            </a>
+
+        </div>
+
+
+        <div class="nav-left">
+
+            <button class="notification-btn">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+            <div>
+
+                <span>اكتشف المنتجات الزراعية 🌱</span>
+
+                <h1>
+                    السوق الزراعي
+                </h1>
+
+                <p>
+                    اشترِ منتجات طازجة مباشرة من المزارعين
+                </p>
+
+            </div>
+
+
+            <div class="header-icon">
+
+                🌾
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SEARCH ================= -->
+
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text"
+                    id="searchInput"
+                    placeholder="ابحث عن محصول...">
+
+            </div>
+
+
+            <button class="filter-btn"
+                id="filterBtn">
+
+                <i class="fa-solid fa-filter"></i>
+
+                الفلترة
+
+            </button>
+
+        </section>
+
+
+        <!-- ================= FILTERS ================= -->
+
+        <section class="filters"
+            id="filters">
+
+
+            <div class="filter-item">
+
+                <label>
+                    نوع المحصول
+                </label>
+
+                <select id="typeFilter">
+
+                    <option value="all">
+                        كل المحاصيل
+                    </option>
+
+                    <option value="vegetables">
+                        خضروات
+                    </option>
+
+                    <option value="fruits">
+                        فواكه
+                    </option>
+
+                    <option value="grains">
+                        حبوب
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="filter-item">
+
+                <label>
+                    السعر
+                </label>
+
+                <select id="priceFilter">
+
+                    <option value="all">
+                        كل الأسعار
+                    </option>
+
+                    <option value="low">
+                        أقل من 100
+                    </option>
+
+                    <option value="medium">
+                        100 - 300
+                    </option>
+
+                    <option value="high">
+                        أكثر من 300
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button class="reset-btn"
+                id="resetBtn">
+
+                إعادة ضبط
+
+            </button>
+
+        </section>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section class="products-section">
+
+
+            <div class="section-title">
+
+                <h2>
+                    🌾 المحاصيل المتاحة
+                </h2>
+
+                <span id="productCount">
+                    6 منتجات
+                </span>
+
+            </div>
+
+
+            <div class="products-grid"
+                id="productsGrid">
+
+
+                <!-- PRODUCT 1 -->
+
+                <div class="product-card"
+                    data-type="vegetables"
+                    data-price="80">
+
+
+                    <div class="product-image tomato">
+
+                        🍅
+
+                        <span class="available">
+                            متوفر
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h3>
+                            الطماطم
+                        </h3>
+
+
+                        <div class="price">
+
+                            80 جنيه
+
+                            <span>
+                                / كرتونة
+                            </span>
+
+                        </div>
+
+
+                        <p>
+
+                            <i class="fa-solid fa-box"></i>
+
+                            الكمية: 50 كرتونة
+
+                        </p>
+
+
+                        <p>
+
+                            <i class="fa-solid fa-user"></i>
+
+                            المزارع: أحمد محمد
+
+                        </p>
+
+
+                        <button class="buy-btn"
+                            onclick="buyProduct('الطماطم')">
+
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                            شراء الآن
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 2 -->
+
+                <div class="product-card"
+                    data-type="grains"
+                    data-price="250">
+
+
+                    <div class="product-image wheat">
+
+                        🌾
+
+                        <span class="available">
+                            متوفر
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h3>
+                            القمح
+                        </h3>
+
+
+                        <div class="price">
+
+                            250 جنيه
+
+                            <span>
+                                / شوال
+                            </span>
+
+                        </div>
+
+
+                        <p>
+
+                            <i class="fa-solid fa-box"></i>
+
+                            الكمية: 100 شوال
+
+                        </p>
+
+
+                        <p>
+
+                            <i class="fa-solid fa-user"></i>
+
+                            المزارع: محمد علي
+
+                        </p>
+
+
+                        <button class="buy-btn"
+                            onclick="buyProduct('القمح')">
+
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                            شراء الآن
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 3 -->
+
+                <div class="product-card"
+                    data-type="vegetables"
+                    data-price="120">
+
+
+                    <div class="product-image onion">
+
+                        🧅
+
+                        <span class="available">
+                            متوفر
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h3>
+                            البصل
+                        </h3>
+
+
+                        <div class="price">
+
+                            120 جنيه
+
+                            <span>
+                                / شوال
+                            </span>
+
+                        </div>
+
+
+                        <p>
+
+                            <i class="fa-solid fa-box"></i>
+
+                            الكمية: 70 شوال
+
+                        </p>
+
+
+                        <p>
+
+                            <i class="fa-solid fa-user"></i>
+
+                            المزارع: حسن أحمد
+
+                        </p>
+
+
+                        <button class="buy-btn"
+                            onclick="buyProduct('البصل')">
+
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                            شراء الآن
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 4 -->
+
+                <div class="product-card"
+                    data-type="fruits"
+                    data-price="180">
+
+
+                    <div class="product-image mango">
+
+                        🥭
+
+                        <span class="available">
+                            متوفر
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h3>
+                            المانجو
+                        </h3>
+
+
+                        <div class="price">
+
+                            180 جنيه
+
+                            <span>
+                                / كرتونة
+                            </span>
+
+                        </div>
+
+
+                        <p>
+
+                            <i class="fa-solid fa-box"></i>
+
+                            الكمية: 40 كرتونة
+
+                        </p>
+
+
+                        <p>
+
+                            <i class="fa-solid fa-user"></i>
+
+                            المزارع: خالد عمر
+
+                        </p>
+
+
+                        <button class="buy-btn"
+                            onclick="buyProduct('المانجو')">
+
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                            شراء الآن
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 5 -->
+
+                <div class="product-card"
+                    data-type="vegetables"
+                    data-price="90">
+
+
+                    <div class="product-image potato">
+
+                        🥔
+
+                        <span class="available">
+                            متوفر
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h3>
+                            البطاطس
+                        </h3>
+
+
+                        <div class="price">
+
+                            90 جنيه
+
+                            <span>
+                                / شوال
+                            </span>
+
+                        </div>
+
+
+                        <p>
+
+                            <i class="fa-solid fa-box"></i>
+
+                            الكمية: 60 شوال
+
+                        </p>
+
+
+                        <p>
+
+                            <i class="fa-solid fa-user"></i>
+
+                            المزارع: علي حسن
+
+                        </p>
+
+
+                        <button class="buy-btn"
+                            onclick="buyProduct('البطاطس')">
+
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                            شراء الآن
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 6 -->
+
+                <div class="product-card"
+                    data-type="grains"
+                    data-price="350">
+
+
+                    <div class="product-image corn">
+
+                        🌽
+
+                        <span class="available">
+                            متوفر
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h3>
+                            الذرة
+                        </h3>
+
+
+                        <div class="price">
+
+                            350 جنيه
+
+                            <span>
+                                / شوال
+                            </span>
+
+                        </div>
+
+
+                        <p>
+
+                            <i class="fa-solid fa-box"></i>
+
+                            الكمية: 80 شوال
+
+                        </p>
+
+
+                        <p>
+
+                            <i class="fa-solid fa-user"></i>
+
+                            المزارع: إبراهيم أحمد
+
+                        </p>
+
+
+                        <button class="buy-btn"
+                            onclick="buyProduct('الذرة')">
+
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                            شراء الآن
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="no-results"
+                id="noResults">
+
+                😔 لم يتم العثور على محصول
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
