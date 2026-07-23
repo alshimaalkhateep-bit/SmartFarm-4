@@ -1,0 +1,555 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>الطقس والإرشادات | من أرضنا</title>
+
+    <link rel="stylesheet"
+        href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="top-nav">
+
+        <div class="nav-right">
+
+            <button class="menu-btn"
+                id="menuBtn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="logo">
+
+                🌱 من أرضنا
+
+            </div>
+
+        </div>
+
+
+        <div class="nav-links"
+            id="navLinks">
+
+            <a href="home.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                الرئيسية
+
+            </a>
+
+
+            <a href="market.html">
+
+                <i class="fa-solid fa-store"></i>
+
+                السوق
+
+            </a>
+
+
+            <a href="disease.html">
+
+                <i class="fa-solid fa-robot"></i>
+
+                كشف الأمراض
+
+            </a>
+
+
+            <a href="#"
+                class="active">
+
+                <i class="fa-solid fa-cloud-sun"></i>
+
+                الطقس
+
+            </a>
+
+
+            <a href="#">
+
+                <i class="fa-solid fa-user"></i>
+
+                حسابي
+
+            </a>
+
+        </div>
+
+
+        <div class="nav-left">
+
+            <button class="notification-btn">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+
+        <!-- HEADER -->
+
+        <section class="page-header">
+
+            <div>
+
+                <span>
+                    معلومات تساعدك على اتخاذ القرار الصحيح 🌱
+                </span>
+
+                <h1>
+                    الطقس والإرشادات الزراعية
+                </h1>
+
+                <p>
+                    تابع حالة الطقس واحصل على نصائح مناسبة لمحاصيلك
+                </p>
+
+            </div>
+
+
+            <div class="header-icon">
+
+                ☁️🌾
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WEATHER CURRENT ================= -->
+
+        <section class="current-weather">
+
+
+            <div class="location">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+
+                    <span>
+                        الموقع الحالي
+                    </span>
+
+                    <h2>
+                        الجزيرة، السودان
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="weather-main">
+
+                <div class="weather-icon">
+
+                    ☀️
+
+                </div>
+
+
+                <div>
+
+                    <div class="temperature">
+
+                        32°
+
+                        <span>
+                            C
+                        </span>
+
+                    </div>
+
+                    <p>
+                        مشمس ودافئ
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WEATHER CARDS ================= -->
+
+        <section class="weather-cards">
+
+
+            <!-- TEMPERATURE -->
+
+            <div class="weather-card temperature-card">
+
+                <div class="card-icon">
+
+                    <i class="fa-solid fa-temperature-half"></i>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        درجة الحرارة
+                    </span>
+
+                    <h2>
+                        32°C
+                    </h2>
+
+                    <small>
+                        العظمى 35° / الصغرى 24°
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- RAIN -->
+
+            <div class="weather-card rain-card">
+
+                <div class="card-icon">
+
+                    <i class="fa-solid fa-cloud-rain"></i>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        نسبة الأمطار
+                    </span>
+
+                    <h2>
+                        20%
+                    </h2>
+
+                    <small>
+                        فرصة أمطار منخفضة
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- WIND -->
+
+            <div class="weather-card wind-card">
+
+                <div class="card-icon">
+
+                    <i class="fa-solid fa-wind"></i>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        حالة الرياح
+                    </span>
+
+                    <h2>
+                        18 كم/س
+                    </h2>
+
+                    <small>
+                        رياح خفيفة
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DAILY FORECAST ================= -->
+
+        <section class="forecast-section">
+
+
+            <div class="section-title">
+
+                <h2>
+                    توقعات الأيام القادمة
+                </h2>
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+            </div>
+
+
+            <div class="forecast-list">
+
+
+                <div class="forecast-day">
+
+                    <span>
+                        اليوم
+                    </span>
+
+                    <strong>
+                        ☀️
+                    </strong>
+
+                    <span>
+                        32°
+                    </span>
+
+                    <small>
+                        مشمس
+                    </small>
+
+                </div>
+
+
+                <div class="forecast-day">
+
+                    <span>
+                        غداً
+                    </span>
+
+                    <strong>
+                        🌤️
+                    </strong>
+
+                    <span>
+                        30°
+                    </span>
+
+                    <small>
+                        غائم جزئياً
+                    </small>
+
+                </div>
+
+
+                <div class="forecast-day">
+
+                    <span>
+                        الخميس
+                    </span>
+
+                    <strong>
+                        🌧️
+                    </strong>
+
+                    <span>
+                        28°
+                    </span>
+
+                    <small>
+                        أمطار
+                    </small>
+
+                </div>
+
+
+                <div class="forecast-day">
+
+                    <span>
+                        الجمعة
+                    </span>
+
+                    <strong>
+                        ☀️
+                    </strong>
+
+                    <span>
+                        33°
+                    </span>
+
+                    <small>
+                        مشمس
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FARMING TIPS ================= -->
+
+        <section class="tips-section">
+
+
+            <div class="section-title">
+
+                <div>
+
+                    <h2>
+                        🌱 نصائح زراعية يومية
+                    </h2>
+
+                    <p>
+                        إرشادات مناسبة لحالة الطقس اليوم
+                    </p>
+
+                </div>
+
+
+                <div class="tip-date">
+
+                    <i class="fa-solid fa-calendar"></i>
+
+                    اليوم
+
+                </div>
+
+            </div>
+
+
+            <div class="tips-grid">
+
+
+                <div class="tip-card">
+
+                    <div class="tip-icon">
+
+                        💧
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            الري
+                        </h3>
+
+                        <p>
+                            يفضل ري النباتات في الصباح الباكر
+                            أو بعد غروب الشمس لتقليل تبخر المياه.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="tip-card">
+
+                    <div class="tip-icon">
+
+                        🌿
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            العناية بالنباتات
+                        </h3>
+
+                        <p>
+                            راقب أوراق النباتات باستمرار
+                            ولاحظ أي علامات غير طبيعية.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="tip-card">
+
+                    <div class="tip-icon">
+
+                        🌬️
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            الرياح
+                        </h3>
+
+                        <p>
+                            الرياح خفيفة اليوم، وهو وقت مناسب
+                            للقيام بالأعمال الزراعية.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ALERT ================= -->
+
+        <section class="weather-alert">
+
+            <div class="alert-icon">
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    توصية اليوم
+                </h3>
+
+                <p>
+                    الطقس مناسب للزراعة والري، مع تجنب العمل
+                    في فترة الظهيرة بسبب ارتفاع درجة الحرارة.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
