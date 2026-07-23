@@ -1,0 +1,510 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>إنشاء حساب | من أرضنا</title>
+
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- CSS الموحد -->
+
+    <link rel="stylesheet"
+
+        href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <div class="auth-page">
+
+
+        <main class="auth-card register-card">
+
+
+            <!-- الشعار -->
+
+            <div class="auth-logo">
+
+
+                <div class="auth-logo-icon">
+
+                    🌱
+
+                </div>
+
+
+                <h1>
+
+                    من أرضنا
+
+                </h1>
+
+
+                <p>
+
+                    زراعة ذكية .. مستقبل مستدام
+
+                </p>
+
+
+            </div>
+
+
+            <!-- العنوان -->
+
+            <div class="auth-title">
+
+
+                <h2>
+
+                    إنشاء حساب جديد 🌱
+
+                </h2>
+
+
+                <p>
+
+                    انضمي إلى مجتمع الزراعة الذكية
+
+                </p>
+
+
+            </div>
+
+
+            <!-- النموذج -->
+
+            <form id="registerForm">
+
+
+                <!-- الاسم الكامل -->
+
+                <div class="input-group">
+
+
+                    <label>
+
+                        الاسم الكامل
+
+                    </label>
+
+
+                    <div class="input-box">
+
+
+                        <i class="fa-solid fa-user"></i>
+
+
+                        <input
+
+                            type="text"
+
+                            id="name"
+
+                            placeholder="أدخلي اسمك الكامل"
+
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- البريد الإلكتروني -->
+
+                <div class="input-group">
+
+
+                    <label>
+
+                        البريد الإلكتروني
+
+                    </label>
+
+
+                    <div class="input-box">
+
+
+                        <i class="fa-solid fa-envelope"></i>
+
+
+                        <input
+
+                            type="email"
+
+                            id="email"
+
+                            placeholder="example@email.com"
+
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- رقم الهاتف -->
+
+                <div class="input-group">
+
+
+                    <label>
+
+                        رقم الهاتف
+
+                    </label>
+
+
+                    <div class="input-box">
+
+
+                        <i class="fa-solid fa-phone"></i>
+
+
+                        <input
+
+                            type="tel"
+
+                            id="phone"
+
+                            placeholder="أدخلي رقم الهاتف"
+
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- المكان -->
+
+                <div class="input-group">
+
+
+                    <label>
+
+                        الولاية / المكان
+
+                    </label>
+
+
+                    <div class="input-box">
+
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+
+                        <select id="location" required>
+
+
+                            <option value="">
+
+                                اختاري مكانك
+
+                            </option>
+
+
+                            <option>
+
+                                ولاية الجزيرة
+
+                            </option>
+
+
+                            <option>
+
+                                الخرطوم
+
+                            </option>
+
+
+                            <option>
+
+                                نهر النيل
+
+                            </option>
+
+
+                            <option>
+
+                                القضارف
+
+                            </option>
+
+
+                            <option>
+
+                                كسلا
+
+                            </option>
+
+
+                            <option>
+
+                                سنار
+
+                            </option>
+
+
+                            <option>
+
+                                النيل الأبيض
+
+                            </option>
+
+
+                            <option>
+
+                                شمال كردفان
+
+                            </option>
+
+
+                            <option>
+
+                                أخرى
+
+                            </option>
+
+
+                        </select>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- نوع المستخدم -->
+
+                <div class="input-group">
+
+
+                    <label>
+
+                        نوع الحساب
+
+                    </label>
+
+
+                    <div class="input-box">
+
+
+                        <i class="fa-solid fa-seedling"></i>
+
+
+                        <select id="userType" required>
+
+
+                            <option value="">
+
+                                اختاري نوع الحساب
+
+                            </option>
+
+
+                            <option value="farmer">
+
+                                مزارع
+
+                            </option>
+
+
+                            <option value="buyer">
+
+                                مشتري
+
+                            </option>
+
+
+                            <option value="supplier">
+
+                                مورد مستلزمات زراعية
+
+                            </option>
+
+
+                        </select>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- كلمة المرور -->
+
+                <div class="input-group">
+
+
+                    <label>
+
+                        كلمة المرور
+
+                    </label>
+
+
+                    <div class="input-box">
+
+
+                        <i class="fa-solid fa-lock"></i>
+
+
+                        <input
+
+                            type="password"
+
+                            id="password"
+
+                            placeholder="أدخلي كلمة المرور"
+
+                            required>
+
+
+                        <button
+
+                            type="button"
+
+                            class="show-password">
+
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- تأكيد كلمة المرور -->
+
+                <div class="input-group">
+
+
+                    <label>
+
+                        تأكيد كلمة المرور
+
+                    </label>
+
+
+                    <div class="input-box">
+
+
+                        <i class="fa-solid fa-lock"></i>
+
+
+                        <input
+
+                            type="password"
+
+                            id="confirmPassword"
+
+                            placeholder="أعيدي كتابة كلمة المرور"
+
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- الموافقة -->
+
+                <div class="terms">
+
+
+                    <label>
+
+
+                        <input
+
+                            type="checkbox"
+
+                            id="terms"
+
+                            required>
+
+
+                        أوافق على شروط الاستخدام
+
+                    </label>
+
+
+                </div>
+
+
+                <!-- زر التسجيل -->
+
+                <button
+
+                    type="submit"
+
+                    class="main-btn">
+
+
+                    إنشاء الحساب
+
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+
+                </button>
+
+
+            </form>
+
+
+            <!-- تسجيل الدخول -->
+
+            <div class="register">
+
+
+                <p>
+
+                    لديك حساب بالفعل؟
+
+                </p>
+
+
+                <a href="login.html">
+
+                    تسجيل الدخول
+
+                </a>
+
+
+            </div>
+
+
+        </main>
+
+
+    </div>
+
+
+    <!-- JavaScript الموحد -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
