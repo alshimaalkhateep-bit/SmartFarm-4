@@ -1,0 +1,914 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>المستلزمات الزراعية | من أرضنا</title>
+
+    <link rel="stylesheet"
+        href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="top-nav">
+
+
+        <div class="nav-right">
+
+
+            <button class="menu-btn"
+                id="menuBtn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="logo">
+
+                🌱 من أرضنا
+
+            </div>
+
+        </div>
+
+
+        <div class="nav-links"
+            id="navLinks">
+
+
+            <a href="home.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                الرئيسية
+
+            </a>
+
+
+            <a href="market.html">
+
+                <i class="fa-solid fa-store"></i>
+
+                السوق
+
+            </a>
+
+
+            <a href="#"
+                class="active">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                المستلزمات
+
+            </a>
+
+
+            <a href="disease.html">
+
+                <i class="fa-solid fa-robot"></i>
+
+                كشف الأمراض
+
+            </a>
+
+
+            <a href="#">
+
+                <i class="fa-solid fa-user"></i>
+
+                حسابي
+
+            </a>
+
+
+        </div>
+
+
+        <div class="nav-left">
+
+
+            <button class="cart-btn"
+                id="cartBtn">
+
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+
+                <span id="cartCount">
+
+                    0
+
+                </span>
+
+
+            </button>
+
+
+        </div>
+
+
+    </nav>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+
+            <div>
+
+
+                <span>
+
+                    كل ما يحتاجه محصولك في مكان واحد 🌱
+
+                </span>
+
+
+                <h1>
+
+                    متجر المستلزمات الزراعية
+
+                </h1>
+
+
+                <p>
+
+                    اختر أفضل الأدوات والمنتجات لمزرعتك
+
+                </p>
+
+
+            </div>
+
+
+            <div class="header-icon">
+
+                🛒🌾
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ================= SEARCH ================= -->
+
+        <section class="search-section">
+
+
+            <div class="search-box">
+
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+
+                <input type="text"
+                    id="searchInput"
+                    placeholder="ابحث عن منتج...">
+
+
+            </div>
+
+
+            <button class="filter-btn"
+                id="filterBtn">
+
+
+                <i class="fa-solid fa-filter"></i>
+
+                تصفية
+
+            </button>
+
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="categories">
+
+
+            <button class="category active"
+                data-category="all">
+
+
+                <span>🌱</span>
+
+                الكل
+
+            </button>
+
+
+            <button class="category"
+                data-category="seeds">
+
+
+                <span>🌾</span>
+
+                بذور
+
+            </button>
+
+
+            <button class="category"
+                data-category="fertilizers">
+
+
+                <span>🧪</span>
+
+                أسمدة
+
+            </button>
+
+
+            <button class="category"
+                data-category="tools">
+
+
+                <span>🛠️</span>
+
+                أدوات
+
+            </button>
+
+
+            <button class="category"
+                data-category="pesticides">
+
+
+                <span>🧴</span>
+
+                مبيدات
+
+            </button>
+
+
+        </section>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section class="products-section">
+
+
+            <div class="section-title">
+
+
+                <div>
+
+                    <h2>
+
+                        المنتجات الزراعية
+
+                    </h2>
+
+
+                    <p>
+
+                        منتجات مختارة لمزرعتك
+
+                    </p>
+
+                </div>
+
+
+                <span id="productsCount">
+
+                    8 منتجات
+
+                </span>
+
+
+            </div>
+
+
+            <div class="products-grid"
+                id="productsGrid">
+
+
+                <!-- PRODUCT 1 -->
+
+                <div class="product-card"
+                    data-category="seeds"
+                    data-name="بذور الطماطم">
+
+
+                    <div class="product-image">
+
+                        🌱
+
+                        <span class="product-badge">
+
+                            الأكثر مبيعاً
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+
+                        <span class="product-category">
+
+                            بذور
+
+                        </span>
+
+
+                        <h3>
+
+                            بذور الطماطم
+
+                        </h3>
+
+
+                        <div class="rating">
+
+                            ⭐⭐⭐⭐⭐
+
+                            <span>
+
+                                4.9
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-bottom">
+
+
+                            <strong>
+
+                                2,500 ج.س
+
+                            </strong>
+
+
+                            <button class="add-btn"
+                                data-product="بذور الطماطم">
+
+
+                                <i class="fa-solid fa-plus"></i>
+
+                                سلة
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 2 -->
+
+                <div class="product-card"
+                    data-category="seeds"
+                    data-name="بذور الذرة">
+
+
+                    <div class="product-image">
+
+                        🌽
+
+                    </div>
+
+
+                    <div class="product-info">
+
+
+                        <span class="product-category">
+
+                            بذور
+
+                        </span>
+
+
+                        <h3>
+
+                            بذور الذرة
+
+                        </h3>
+
+
+                        <div class="rating">
+
+                            ⭐⭐⭐⭐☆
+
+                            <span>
+
+                                4.6
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-bottom">
+
+
+                            <strong>
+
+                                3,000 ج.س
+
+                            </strong>
+
+
+                            <button class="add-btn"
+                                data-product="بذور الذرة">
+
+
+                                <i class="fa-solid fa-plus"></i>
+
+                                سلة
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 3 -->
+
+                <div class="product-card"
+                    data-category="fertilizers"
+                    data-name="سماد عضوي">
+
+
+                    <div class="product-image">
+
+                        🪴
+
+                    </div>
+
+
+                    <div class="product-info">
+
+
+                        <span class="product-category">
+
+                            أسمدة
+
+                        </span>
+
+
+                        <h3>
+
+                            سماد عضوي طبيعي
+
+                        </h3>
+
+
+                        <div class="rating">
+
+                            ⭐⭐⭐⭐⭐
+
+                            <span>
+
+                                4.8
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-bottom">
+
+
+                            <strong>
+
+                                8,000 ج.س
+
+                            </strong>
+
+
+                            <button class="add-btn"
+                                data-product="سماد عضوي">
+
+
+                                <i class="fa-solid fa-plus"></i>
+
+                                سلة
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 4 -->
+
+                <div class="product-card"
+                    data-category="fertilizers"
+                    data-name="سماد نيتروجيني">
+
+
+                    <div class="product-image">
+
+                        🧪
+
+                    </div>
+
+
+                    <div class="product-info">
+
+
+                        <span class="product-category">
+
+                            أسمدة
+
+                        </span>
+
+
+                        <h3>
+
+                            سماد نيتروجيني
+
+                        </h3>
+
+
+                        <div class="rating">
+
+                            ⭐⭐⭐⭐☆
+
+                            <span>
+
+                                4.5
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-bottom">
+
+
+                            <strong>
+
+                                12,000 ج.س
+
+                            </strong>
+
+
+                            <button class="add-btn"
+                                data-product="سماد نيتروجيني">
+
+
+                                <i class="fa-solid fa-plus"></i>
+
+                                سلة
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 5 -->
+
+                <div class="product-card"
+                    data-category="tools"
+                    data-name="مجرفة زراعية">
+
+
+                    <div class="product-image">
+
+                        🛠️
+
+                    </div>
+
+
+                    <div class="product-info">
+
+
+                        <span class="product-category">
+
+                            أدوات
+
+                        </span>
+
+
+                        <h3>
+
+                            مجرفة زراعية
+
+                        </h3>
+
+
+                        <div class="rating">
+
+                            ⭐⭐⭐⭐⭐
+
+                            <span>
+
+                                4.7
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-bottom">
+
+
+                            <strong>
+
+                                6,500 ج.س
+
+                            </strong>
+
+
+                            <button class="add-btn"
+                                data-product="مجرفة زراعية">
+
+
+                                <i class="fa-solid fa-plus"></i>
+
+                                سلة
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 6 -->
+
+                <div class="product-card"
+                    data-category="tools"
+                    data-name="مرش زراعي">
+
+
+                    <div class="product-image">
+
+                        💧
+
+                    </div>
+
+
+                    <div class="product-info">
+
+
+                        <span class="product-category">
+
+                            أدوات
+
+                        </span>
+
+
+                        <h3>
+
+                            مرش زراعي
+
+                        </h3>
+
+
+                        <div class="rating">
+
+                            ⭐⭐⭐⭐☆
+
+                            <span>
+
+                                4.4
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-bottom">
+
+
+                            <strong>
+
+                                15,000 ج.س
+
+                            </strong>
+
+
+                            <button class="add-btn"
+                                data-product="مرش زراعي">
+
+
+                                <i class="fa-solid fa-plus"></i>
+
+                                سلة
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 7 -->
+
+                <div class="product-card"
+                    data-category="pesticides"
+                    data-name="مبيد حشري">
+
+
+                    <div class="product-image">
+
+                        🧴
+
+                    </div>
+
+
+                    <div class="product-info">
+
+
+                        <span class="product-category">
+
+                            مبيدات
+
+                        </span>
+
+
+                        <h3>
+
+                            مبيد حشري
+
+                        </h3>
+
+
+                        <div class="rating">
+
+                            ⭐⭐⭐⭐⭐
+
+                            <span>
+
+                                4.9
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-bottom">
+
+
+                            <strong>
+
+                                10,000 ج.س
+
+                            </strong>
+
+
+                            <button class="add-btn"
+                                data-product="مبيد حشري">
+
+
+                                <i class="fa-solid fa-plus"></i>
+
+                                سلة
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 8 -->
+
+                <div class="product-card"
+                    data-category="pesticides"
+                    data-name="مبيد فطري">
+
+
+                    <div class="product-image">
+
+                        🌿
+
+                    </div>
+
+
+                    <div class="product-info">
+
+
+                        <span class="product-category">
+
+                            مبيدات
+
+                        </span>
+
+
+                        <h3>
+
+                            مبيد فطري
+
+                        </h3>
+
+
+                        <div class="rating">
+
+                            ⭐⭐⭐⭐☆
+
+                            <span>
+
+                                4.6
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-bottom">
+
+
+                            <strong>
+
+                                9,500 ج.س
+
+                            </strong>
+
+
+                            <button class="add-btn"
+                                data-product="مبيد فطري">
+
+
+                                <i class="fa-solid fa-plus"></i>
+
+                                سلة
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

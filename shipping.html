@@ -1,0 +1,647 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>الشحن والتتبع | من أرضنا</title>
+
+    <link rel="stylesheet"
+        href="style.css">
+
+    <!-- Leaflet Map -->
+
+    <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="top-nav">
+
+
+        <div class="nav-right">
+
+
+            <button class="menu-btn"
+                id="menuBtn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="logo">
+
+                🌱 من أرضنا
+
+            </div>
+
+        </div>
+
+
+        <div class="nav-links"
+            id="navLinks">
+
+
+            <a href="home.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                الرئيسية
+
+            </a>
+
+
+            <a href="market.html">
+
+                <i class="fa-solid fa-store"></i>
+
+                السوق
+
+            </a>
+
+
+            <a href="#">
+
+                <i class="fa-solid fa-box"></i>
+
+                الطلبات
+
+            </a>
+
+
+            <a href="#"
+                class="active">
+
+                <i class="fa-solid fa-truck"></i>
+
+                الشحن
+
+            </a>
+
+
+            <a href="#">
+
+                <i class="fa-solid fa-user"></i>
+
+                حسابي
+
+            </a>
+
+
+        </div>
+
+
+        <div class="nav-left">
+
+
+            <button class="notification-btn">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <span></span>
+
+            </button>
+
+
+        </div>
+
+
+    </nav>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+
+            <div>
+
+
+                <span>
+
+                    تابع طلبك خطوة بخطوة 🚚
+
+                </span>
+
+
+                <h1>
+
+                    الشحن والتتبع
+
+                </h1>
+
+
+                <p>
+
+                    تعرف على موقع شحنتك وموعد وصولها
+
+                </p>
+
+
+            </div>
+
+
+            <div class="header-icon">
+
+                🚚📍
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ================= ORDER STATUS ================= -->
+
+        <section class="order-status">
+
+
+            <div class="order-info">
+
+
+                <div class="order-icon">
+
+                    <i class="fa-solid fa-box"></i>
+
+                </div>
+
+
+                <div>
+
+
+                    <span>
+
+                        رقم الطلب
+
+                    </span>
+
+
+                    <h2>
+
+                        #ORD-2026-00125
+
+                    </h2>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="status-badge">
+
+                <i class="fa-solid fa-truck-fast"></i>
+
+                في الطريق
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ================= MAIN TRACKING ================= -->
+
+        <section class="tracking-layout">
+
+
+            <!-- MAP -->
+
+            <div class="map-card">
+
+
+                <div class="map-header">
+
+
+                    <div>
+
+                        <h2>
+
+                            <i class="fa-solid fa-map-location-dot"></i>
+
+                            موقع الشحنة
+
+                        </h2>
+
+
+                        <p>
+
+                            آخر تحديث: منذ 5 دقائق
+
+                        </p>
+
+                    </div>
+
+
+                    <button class="location-btn"
+                        id="locationBtn">
+
+                        <i class="fa-solid fa-crosshairs"></i>
+
+                    </button>
+
+
+                </div>
+
+
+                <div id="map"></div>
+
+
+            </div>
+
+
+            <!-- ETA -->
+
+            <div class="delivery-card">
+
+
+                <div class="delivery-icon">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                </div>
+
+
+                <div>
+
+
+                    <span>
+
+                        الوقت المتوقع للوصول
+
+                    </span>
+
+
+                    <h2>
+
+                        45 دقيقة
+
+                    </h2>
+
+
+                    <p>
+
+                        الوصول المتوقع: اليوم 04:30 مساءً
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ================= DRIVER ================= -->
+
+        <section class="driver-card">
+
+
+            <div class="section-title">
+
+
+                <h2>
+
+                    🚚 معلومات السائق
+
+                </h2>
+
+
+                <span>
+
+                    السائق في الطريق
+
+                </span>
+
+
+            </div>
+
+
+            <div class="driver-content">
+
+
+                <div class="driver-profile">
+
+
+                    <div class="driver-avatar">
+
+                        👨🏾‍🌾
+
+                    </div>
+
+
+                    <div>
+
+
+                        <h3>
+
+                            محمد أحمد
+
+                        </h3>
+
+
+                        <p>
+
+                            سائق توصيل
+
+                        </p>
+
+
+                        <div class="rating">
+
+                            ⭐ 4.8
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="vehicle-info">
+
+
+                    <div>
+
+                        <i class="fa-solid fa-truck"></i>
+
+                        <span>
+
+                            شاحنة صغيرة
+
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-id-card"></i>
+
+                        <span>
+
+                            رقم المركبة: 4521
+
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+                <button class="call-btn"
+                    id="callBtn">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    اتصال
+
+                </button>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ================= TIMELINE ================= -->
+
+        <section class="timeline-card">
+
+
+            <div class="section-title">
+
+
+                <h2>
+
+                    📦 حالة الطلب
+
+                </h2>
+
+
+                <span>
+
+                    تحديث مباشر
+
+                </span>
+
+
+            </div>
+
+
+            <div class="timeline">
+
+
+                <!-- COMPLETED -->
+
+                <div class="timeline-item completed">
+
+
+                    <div class="timeline-icon">
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </div>
+
+
+                    <div class="timeline-content">
+
+
+                        <h3>
+
+                            تم تأكيد الطلب
+
+                        </h3>
+
+
+                        <p>
+
+                            تم تأكيد طلبك بنجاح
+
+                        </p>
+
+
+                        <span>
+
+                            اليوم - 10:00 صباحاً
+
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- COMPLETED -->
+
+                <div class="timeline-item completed">
+
+
+                    <div class="timeline-icon">
+
+                        <i class="fa-solid fa-box"></i>
+
+                    </div>
+
+
+                    <div class="timeline-content">
+
+
+                        <h3>
+
+                            تم تجهيز الطلب
+
+                        </h3>
+
+
+                        <p>
+
+                            تم تجهيز المنتجات للشحن
+
+                        </p>
+
+
+                        <span>
+
+                            اليوم - 11:30 صباحاً
+
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- ACTIVE -->
+
+                <div class="timeline-item active">
+
+
+                    <div class="timeline-icon">
+
+                        <i class="fa-solid fa-truck"></i>
+
+                    </div>
+
+
+                    <div class="timeline-content">
+
+
+                        <h3>
+
+                            الطلب في الطريق
+
+                        </h3>
+
+
+                        <p>
+
+                            الشحنة في طريقها إليك الآن
+
+                        </p>
+
+
+                        <span>
+
+                            اليوم - 02:00 مساءً
+
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- UPCOMING -->
+
+                <div class="timeline-item">
+
+
+                    <div class="timeline-icon">
+
+                        <i class="fa-solid fa-house"></i>
+
+                    </div>
+
+
+                    <div class="timeline-content">
+
+
+                        <h3>
+
+                            تم التوصيل
+
+                        </h3>
+
+
+                        <p>
+
+                            سيتم تسليم الطلب عند الوصول
+
+                        </p>
+
+
+                        <span>
+
+                            متوقع اليوم
+
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <!-- LEAFLET -->
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
