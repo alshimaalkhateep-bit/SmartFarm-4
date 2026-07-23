@@ -1,0 +1,455 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>كشف الأمراض | من أرضنا</title>
+
+    <link rel="stylesheet"
+        href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="top-nav">
+
+        <div class="nav-right">
+
+            <button class="menu-btn"
+                id="menuBtn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="logo">
+
+                🌱 من أرضنا
+
+            </div>
+
+        </div>
+
+
+        <div class="nav-links"
+            id="navLinks">
+
+            <a href="home.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                الرئيسية
+
+            </a>
+
+
+            <a href="market.html">
+
+                <i class="fa-solid fa-store"></i>
+
+                السوق
+
+            </a>
+
+
+            <a href="#"
+                class="active">
+
+                <i class="fa-solid fa-robot"></i>
+
+                كشف الأمراض
+
+            </a>
+
+
+            <a href="#">
+
+                <i class="fa-solid fa-user"></i>
+
+                حسابي
+
+            </a>
+
+        </div>
+
+
+        <div class="nav-left">
+
+            <button class="notification-btn">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+            <div>
+
+                <span>
+                    تقنية ذكية لمساعدة المزارعين 🤖
+                </span>
+
+                <h1>
+                    كشف أمراض النباتات
+                </h1>
+
+                <p>
+                    ارفع صورة لنباتك ودع الذكاء الاصطناعي يساعدك
+                </p>
+
+            </div>
+
+
+            <div class="header-icon">
+
+                🤖🌿
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ANALYSIS AREA ================= -->
+
+        <section class="analysis-layout">
+
+
+            <!-- UPLOAD CARD -->
+
+            <div class="upload-card">
+
+
+                <div class="card-title">
+
+                    <h2>
+                        <i class="fa-solid fa-camera"></i>
+
+                        افحص نباتك
+                    </h2>
+
+                    <p>
+                        التقط صورة واضحة للورقة المصابة
+                    </p>
+
+                </div>
+
+
+                <!-- IMAGE PREVIEW -->
+
+                <div class="image-preview"
+                    id="imagePreview">
+
+                    <div class="preview-content">
+
+                        <i class="fa-solid fa-leaf"></i>
+
+                        <h3>
+                            لم يتم اختيار صورة
+                        </h3>
+
+                        <p>
+                            ارفع صورة أو استخدم الكاميرا
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BUTTONS -->
+
+                <div class="action-buttons">
+
+
+                    <label class="upload-btn">
+
+                        <i class="fa-solid fa-upload"></i>
+
+                        رفع صورة
+
+                        <input type="file"
+                            id="imageUpload"
+                            accept="image/*"
+                            hidden>
+
+                    </label>
+
+
+                    <button class="camera-btn"
+                        id="cameraBtn">
+
+                        <i class="fa-solid fa-camera"></i>
+
+                        الكاميرا
+
+                    </button>
+
+                </div>
+
+
+                <button class="analyze-btn"
+                    id="analyzeBtn"
+                    disabled>
+
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                    تحليل النبات
+
+                </button>
+
+
+                <div class="loading"
+                    id="loading">
+
+                    <div class="spinner"></div>
+
+                    <p>
+                        جاري تحليل الصورة...
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESULT CARD -->
+
+            <div class="result-card"
+                id="resultCard">
+
+
+                <div class="result-header">
+
+                    <div class="result-icon">
+
+                        <i class="fa-solid fa-microscope"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h2>
+                            نتيجة التحليل
+                        </h2>
+
+                        <span>
+                            تحليل ذكي للنبات
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="result-empty"
+                    id="resultEmpty">
+
+                    <i class="fa-solid fa-clipboard-check"></i>
+
+                    <h3>
+                        النتيجة ستظهر هنا
+                    </h3>
+
+                    <p>
+                        قم برفع صورة النبات ثم اضغط على تحليل النبات
+                    </p>
+
+                </div>
+
+
+                <div class="result-content"
+                    id="resultContent">
+
+
+                    <div class="result-status">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        تم اكتشاف مشكلة محتملة
+
+                    </div>
+
+
+                    <div class="disease-name">
+
+                        <span>
+                            اسم المرض
+                        </span>
+
+                        <h2>
+                            مرض اللفحة المبكرة
+                        </h2>
+
+                    </div>
+
+
+                    <div class="confidence">
+
+                        <div>
+
+                            <span>
+                                نسبة دقة التحليل
+                            </span>
+
+                            <strong>
+                                92%
+                            </strong>
+
+                        </div>
+
+
+                        <div class="progress">
+
+                            <div></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="treatment">
+
+                        <h3>
+
+                            <i class="fa-solid fa-prescription-bottle-medical"></i>
+
+                            العلاج المناسب
+
+                        </h3>
+
+
+                        <p>
+
+                            إزالة الأوراق المصابة، وتحسين التهوية
+                            حول النبات، واستخدام مبيد فطري مناسب
+                            حسب إرشادات المختص الزراعي.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="advice">
+
+                        <i class="fa-solid fa-lightbulb"></i>
+
+                        <span>
+                            نصيحة: تجنب ري الأوراق مباشرة واهتم بالتهوية.
+                        </span>
+
+                    </div>
+
+
+                    <button class="new-analysis"
+                        id="newAnalysis">
+
+                        <i class="fa-solid fa-rotate"></i>
+
+                        تحليل صورة جديدة
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TIPS ================= -->
+
+        <section class="tips-section">
+
+
+            <h2>
+                💡 نصائح للحصول على نتيجة أفضل
+            </h2>
+
+
+            <div class="tips-grid">
+
+
+                <div class="tip-card">
+
+                    <i class="fa-solid fa-sun"></i>
+
+                    <h3>
+                        إضاءة جيدة
+                    </h3>
+
+                    <p>
+                        التقط الصورة في مكان مضيء وواضح.
+                    </p>
+
+                </div>
+
+
+                <div class="tip-card">
+
+                    <i class="fa-solid fa-expand"></i>
+
+                    <h3>
+                        صورة واضحة
+                    </h3>
+
+                    <p>
+                        اجعل الورقة المصابة واضحة داخل الصورة.
+                    </p>
+
+                </div>
+
+
+                <div class="tip-card">
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                    <h3>
+                        صورة قريبة
+                    </h3>
+
+                    <p>
+                        ركز على الجزء المصاب من النبات.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
